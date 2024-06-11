@@ -1,0 +1,20 @@
+.nav-link {
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+    padding: 8px 16px; /* Padding mặc định */
+    font-size: 16px; /* Kích thước chữ mặc định */
+  }
+
+  .nav-link:hover {
+    background-color: #000;
+    color: #fff; 
+    border-radius: 20px; 
+    padding: 10px 18px; 
+  }
+
+  .nav-link.active:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 18px; 
+
+  }
