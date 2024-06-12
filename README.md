@@ -19,14 +19,14 @@
   <p align="center">
     Website project in CSE703064
     <br />
-    <a href="https://github.com/tuanpka/PetStore-OOP"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hiepdaoquang704/Web_project-"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/tuanpka/PetStore-OOP">View Demo</a>
+    <a href="https://github.com/hiepdaoquang704/Web_project-">View Demo</a>
     ·
-    <a href="https://github.com/tuanpka/PetStore-OOP/issues">Report Bug</a>
+    <a href="https://github.com/hiepdaoquang704/Web_project-/issues">Report Bug</a>
     ·
-    <a href="https://github.com/tuanpka/PetStore-OOP/issues">Request Feature</a>
+    <a href="https://github.com/hiepdaoquang704/Web_project-/issues">Request Feature</a>
   </p>
 </div>
 
@@ -96,7 +96,7 @@ Trang web có 6 chức năng chính sau đây, tương ứng với 6 phần trê
 
 ### Chuẩn bị
 
-Sử dụng IDE có hỗ trợ ngôn ngữ lập trình HTML & CSS 
+Sử dụng IDE có hỗ trợ ngôn ngữ lập trình HTML & CSS và 1 trình duyệt web cơ bản.
 
 ### Cài đặt
 
@@ -123,8 +123,8 @@ Tải xuống toàn bộ project bằng chức năng download ZIP, hoặc sử d
 
 <!-- ROADMAP -->
 ## Roadmap
-
-- [ working... ] Trang chủ 
+- [ Done ] Header - Footer
+- [ working 50% ] Trang chủ 
 - [ working... ] Về Asilla
 - [ working...] Tuyển Dụng
 - [ working... ] Tin Tức
@@ -140,7 +140,7 @@ This project is developed by Group 1.
 
 Contact:
 * Phạm Minh Tuấn – 21012400@st.phenikaa-uni.edu.vn
-* Đào Quang Hiệp - 21013089@st.phenikaa-uni.edu.vn
+* Đào Quang Hiệp – 21013089@st.phenikaa-uni.edu.vn
 
 
 Project Link:
