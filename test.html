@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show More Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .box {
+            height: 100px;
+            margin-bottom: 15px;
+            background-color: #f1f1f1;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+        }
+        .box.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row" id="box-container">
+        <!-- Tạo các box -->
+        <div class="col-md-4 box">Box 1</div>
+        <div class="col-md-4 box">Box 2</div>
+        <div class="col-md-4 box">Box 3</div>
+        <div class="col-md-4 box">Box 4</div>
+        <div class="col-md-4 box">Box 5</div>
+        <div class="col-md-4 box">Box 6</div>
+        <div class="col-md-4 box">Box 7</div>
+        <div class="col-md-4 box">Box 8</div>
+        <div class="col-md-4 box">Box 9</div>
+        <div class="col-md-4 box hidden">Box 10</div>
+        <div class="col-md-4 box hidden">Box 11</div>
+        <div class="col-md-4 box hidden">Box 12</div>
+        <div class="col-md-4 box hidden">Box 13</div>
+        <div class="col-md-4 box hidden">Box 14</div>
+        <div class="col-md-4 box hidden">Box 15</div>
+        <div class="col-md-4 box hidden">Box 16</div>
+        <div class="col-md-4 box hidden">Box 17</div>
+        <div class="col-md-4 box hidden">Box 18</div>
+        <!-- Thêm các box khác nếu cần -->
+    </div>
+    <div class="text-center mt-3">
+        <button id="load-more" class="btn btn-primary">Xem thêm</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('load-more').addEventListener('click', function() {
+        // Lấy tất cả các box hiện tại
+        let hiddenBoxes = document.querySelectorAll('.box.hidden');
+        // Hiển thị 9 box tiếp theo
+        for (let i = 0; i < 9 && i < hiddenBoxes.length; i++) {
+            hiddenBoxes[i].classList.remove('hidden');
+        }
+        // Kiểm tra nếu không còn box ẩn, thì ẩn nút "Xem thêm"
+        if (document.querySelectorAll('.box.hidden').length === 0) {
+            document.getElementById('load-more').style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

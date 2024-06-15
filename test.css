@@ -1,0 +1,7 @@
+.box-hidden {
+    display: none;
+}
+
+.row .col-lg-4:nth-child(-n+9) {
+    display: block;
+}

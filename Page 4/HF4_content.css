@@ -1,0 +1,55 @@
+
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.main-content article {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+header, .main-content {
+    padding: 1rem;
+}
