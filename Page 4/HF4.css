@@ -1,0 +1,128 @@
+
+
+.content-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.content-page .news{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.content-page .Tin-tuc{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+.nav-pills .nav-link {
+  background-color: white; 
+  color: #000000; 
+  transition: background-color 0s ease, color 0.3s ease;
+  border-radius: 30px;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #e9ecef; 
+  color: #ffffff; 
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ff0a0a; 
+  color: white;
+} 
+
+.box-container{
+  width: 70%;
+
+}
+
+.tab-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992px) { /* Medium devices (tablets, 768px and up) */
+  .box-container {
+      width: 100%;
+  }
+}
+@media (max-width: 576px) { /* Small devices (landscape phones, 576px and up) */
+  .box-container {
+      width: 100%;
+  }
+}
+
+@media (max-width: 992px) { /* Medium devices (tablets, 768px and up) */
+  .nav-pills .nav-link {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+@media (max-width: 576px) {
+  .nav-pills .nav-link {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  background-color: #fdecec; /* Light pink background */
+  border-radius: 20px; /* Rounded edges */
+  padding: 5px 10px; /* Padding for some space around the text */
+  width: 50%;
+  margin-top: 20px;
+  
+}
+.label-text {
+  color: #e60000; /* Red color for the label text */
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 5px; /* Space between label and date */
+  background-color: white;
+  border-radius: 10px;
+  width:50px;
+}
+.date-text {
+  color: #888888; /* Gray color for the date text */
+  font-size: 10px;
+}
+.tieu-de{
+  color: black;
+  text-align: left !important; 
+  margin-top: 30px;
+
+}
+
+.link-container {
+  display: inline-flex;
+  transition: transform 0.3s ease;
+  padding: 10px;
+  color: red;
+  cursor: pointer;
+  justify-content: flex-start !important; 
+}
+
+.arrow-icon {
+  display: inline-block;
+  margin-left: 5px;
+  transform: rotate(120deg);
+  transition: transform 0.3s ease;
+}
+.link-container:hover .arrow-icon {
+  transform: rotate(180deg); /* Rotate the arrow icon to horizontal */
+}
