@@ -127,8 +127,8 @@ Tải xuống toàn bộ project bằng chức năng download ZIP, hoặc sử d
 - [ working 50% ] Trang chủ 
 - [ working... ] Về Asilla
 - [ working...] Tuyển Dụng
-- [ working... ] Tin Tức
-- [ working... ] Chia Sẻ
+- [ working 99.99% ] Tin Tức
+- [ working 20%] Chia Sẻ
 - [ working... ] Liên Hệ
 
 
