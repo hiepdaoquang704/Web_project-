@@ -5,20 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trang chủ</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap">
   <link rel="stylesheet" href="/HeaderFooter/HF.css">
+  <link rel="stylesheet" href="/Page 5/HF5.css">
+
 </head>
 
 <body>
 
   <!-- Header -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <img
-        src="https://assets-global.website-files.com/65026dd496ae11e0661a276e/65032cd4c963baf7426da10c_641bfd4313ab6e27fe484fcf_header-logo.svg"
-        alt="Logo">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://assets-global.website-files.com/65026dd496ae11e0661a276e/65032cd4c963baf7426da10c_641bfd4313ab6e27fe484fcf_header-logo.svg"
+          alt="Logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,12 +53,43 @@
 
   <!-- Content -->
 
+  <div class="content-page">
+    <p class ='blog'>Blog </p>
+    <p class = 'chia-se'>Chia sẻ</p>
 
-  <br> Đây <br>
-  <br> Là <br>
-  <br> Phần <br>
-  <br> Content <br>
-  <br> Test <br>
+
+  </div>
+
+  <div class="container mt-3">
+
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tất cả</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Kiến thức công nghệ</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Phát triển sự nghiệp</button>
+      </li>
+      </ul>
+
+
+
+      <div class="tab-content" id="pills-tabContent"> <!-- start tab-content-->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><!--start tab 1--> a
+
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><!--start tab 2 --> b</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> <!--start tab 3 --> c</div>
+
+      </div><!-- end tab-content-->
+
+
+  </div>
+
+
 
   <!-- Footer -->
   <footer>
@@ -89,9 +123,26 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+Ybjg4Pb7jE6niROE2iPjsoxIT2kB"
-    crossorigin="anonymous"></script>
+  <!-- Ensure Bootstrap JS and Popper.js are included -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+
+  <script>
+    document.getElementById('load-more').addEventListener('click', function() {
+        // Lấy tất cả các box hiện tại
+        let hiddenBoxes = document.querySelectorAll('.box.hidden');
+        // Hiển thị 9 box tiếp theo
+        for (let i = 0; i < 9 && i < hiddenBoxes.length; i++) {
+            hiddenBoxes[i].classList.remove('hidden');
+        }
+        // Kiểm tra nếu không còn box ẩn, thì ẩn nút "Xem thêm"
+        if (document.querySelectorAll('.box.hidden').length === 0) {
+            document.getElementById('load-more').style.display = 'none';
+        }
+    });
+</script>
+
 </body>
 
 </html>
