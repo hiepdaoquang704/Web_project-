@@ -40,12 +40,50 @@
   width: 70%;
 
 }
+.image-container {
+  overflow: hidden;
+  border-radius: 10px; 
+}
 
+.zoom-image {
+  width: 100%;
+  height: auto;
+  transition: 0.2s ease;
+}
 
+.zoom-image:hover {
+  transform: scale(1.05);
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  background-color: #fdecec; /* Light pink background */
+  border-radius: 20px; /* Rounded edges */
+  padding: 5px 10px; /* Padding for some space around the text */
+  width: 60%;
+  
+}
+.label-text {
+  color: #e60000; /* Red color for the label text */
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 5px; /* Space between label and date */
+  background-color: white;
+  border-radius: 10px;
+  width:150px;
+}
+.date-text {
+  color: #888888; /* Gray color for the date text */
+  font-size: 10px;
+}
 .tab-content{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hidden {
+  display: none;
 }
 
 @media (max-width: 992px) { /* Medium devices (tablets, 768px and up) */
@@ -74,4 +112,22 @@
 
 a{
   text-decoration: none;
+}
+
+
+.link-container {
+  transition: transform 0.3s ease;
+  padding: 10px;
+  color: rgb(255, 9, 9);
+  cursor: pointer; 
+}
+
+.arrow-icon {
+  display: inline-block;
+  margin-left: 5px;
+  transform: rotate(120deg);
+  transition: transform 0.3s ease;
+}
+.link-container:hover .arrow-icon {
+  transform: rotate(180deg); /* Rotate the arrow icon to horizontal */
 }

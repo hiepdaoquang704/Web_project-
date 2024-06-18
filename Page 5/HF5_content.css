@@ -1,0 +1,144 @@
+
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.main-content article {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+header, .main-content {
+    padding: 1rem;
+}
+
+.tim-hieu-them {
+    height: 500px;
+    background-image: url('https://assets-global.website-files.com/65026dd496ae11e0661a276e/650bccd230d258040897f131_div.section.png');
+    background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ phần tử */
+    background-position: center; /* Đặt ảnh ở giữa phần tử */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+  }
+  
+  .tim-hieu-them{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .tim-hieu-them .h1{
+    padding: 30px;
+    border-bottom: 1px solid whitesmoke;
+  }
+  
+  
+.label-container {
+    display: flex;
+    align-items: center;
+    background-color: #fdecec; /* Light pink background */
+    border-radius: 20px; /* Rounded edges */
+    padding: 5px 5px; /* Padding for some space around the text */
+    width: 50%;
+    
+  }
+  .label-text {
+    color: #e60000; /* Red color for the label text */
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 5px; /* Space between label and date */
+    background-color: white;
+    border-radius: 10px;
+    width:50px;
+  }
+  .date-text {
+    color: #888888; /* Gray color for the date text */
+    font-size: 10px;
+  }
+  .tieu-de{
+    color: black;
+    text-align: left !important; 
+    margin-top: 30px;
+  
+  }
+  
+  .image-container {
+    overflow: hidden;
+    border-radius: 10px; 
+  }
+  
+  .zoom-image {
+    width: 100%;
+    height: auto;
+    transition: 0.2s ease;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .link-container {
+    transition: transform 0.3s ease;
+    color: red;
+    cursor: pointer; 
+  }
+  
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 5px;
+    transform: rotate(120deg);
+    transition: transform 0.3s ease;
+  }
+  .link-container:hover .arrow-icon {
+    transform: rotate(180deg); /* Rotate the arrow icon to horizontal */
+  }
+  .search-box{
+    width: 100%;
+  
+    display: flex;
+  }
+  .box-container{
+    width: 70%;
+  }

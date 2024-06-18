@@ -1,7 +1,11 @@
-.box-hidden {
-    display: none;
+#content {
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
-.row .col-lg-4:nth-child(-n+9) {
-    display: block;
+#content.show {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
 }

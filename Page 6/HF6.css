@@ -165,3 +165,63 @@ footer .footer-bottom a:hover {
   color: #7b7b7b;
   text-align: center;
 }
+
+.content-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.content-page .Frequently-ask-ques{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.content-page .cau-hoi-thuong-gap{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.box-container{
+  width: 80%;
+}
+
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.toggle-content.show {
+  max-height: 500px; /* Adjust according to the content's height */
+  padding: 1rem;
+}
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.icon-container {
+  position: relative;
+  width: 24px; /* Adjust as needed */
+  height: 24px;
+}
+.icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.icon-vertical {
+  transform: rotate(0deg);
+}
+.icon-horizontal {
+  transform: rotate(90deg);
+}
+.icon-hidden {
+  display: none;
+}

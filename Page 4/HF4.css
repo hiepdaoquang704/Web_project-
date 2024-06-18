@@ -89,9 +89,8 @@ a{
   align-items: center;
   background-color: #fdecec; /* Light pink background */
   border-radius: 20px; /* Rounded edges */
-  padding: 5px 10px; /* Padding for some space around the text */
+  padding: 5px 5px; /* Padding for some space around the text */
   width: 50%;
-  margin-top: 20px;
   
 }
 .label-text {
@@ -114,13 +113,25 @@ a{
 
 }
 
+.image-container {
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.zoom-image {
+  width: 100%;
+  height: auto;
+  transition: 0.2s ease;
+}
+
+.zoom-image:hover {
+  transform: scale(1.05);
+}
+
 .link-container {
-  display: inline-flex;
   transition: transform 0.3s ease;
-  padding: 10px;
   color: red;
-  cursor: pointer;
-  justify-content: flex-start !important; 
+  cursor: pointer; 
 }
 
 .arrow-icon {
@@ -131,4 +142,9 @@ a{
 }
 .link-container:hover .arrow-icon {
   transform: rotate(180deg); /* Rotate the arrow icon to horizontal */
+}
+.search-box{
+  width: 100%;
+
+  display: flex;
 }
