@@ -1,0 +1,351 @@
+/* Header Styles */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.navbar {
+  height: 105px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.navbar img {
+  width: 180px;
+  height: auto;
+  margin-left: -20px;
+}
+
+.nav-link {
+  transition: all .3s;
+  font-size: 17.5px;
+  padding: 10px 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-weight: 400;
+}
+
+.nav-link:hover,
+.nav-link.active:hover {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.nav-link.active {
+  color: inherit;
+}
+
+/* Content Section Styles */
+.content-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.background-image {
+  background-image: url('https://assets-global.website-files.com/65026dd496ae11e0661a276e/652122c3b651737232582a5e_d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.job-listing {
+  margin-top: 20px;
+}
+
+.job-item {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid rgb(198, 198, 198);
+}
+
+.job-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.job-item .job-tag {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.job-item p {
+  margin-bottom: 10px;
+}
+
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.job-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-buttons .btn-detail,
+.job-buttons .btn-apply {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-buttons .btn-detail {
+  background-color: #ccc;
+  color: #000;
+}
+
+.job-buttons .btn-apply {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+/* Part 2 Section Styles */
+.part2-section {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.part2-section h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.background-black {
+  background-image: url('https://assets-global.website-files.com/65026dd496ae11e0661a276e/650bccd230d258040897f131_div.section.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #d4d4d4;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #d4d4d4;
+}
+
+.sub-title {
+  font-size: 1rem;
+  color: #ff0000;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.btn-outline-light {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  width: auto;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.part2-section .text-left {
+  text-align: left;
+}
+
+/* Footer Styles */
+.content {
+  text-align: center;
+  padding: 20px 0 10px 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+  background-image: url('https://assets-global.website-files.com/65026dd496ae11e0661a276e/650a3f3ae6e476e5fe35052d_footer%20bg.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  padding-top: 220px;
+  padding-bottom: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer .nav-links {
+  margin: 10px 0;
+}
+
+footer .nav-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer .nav-links a:hover {
+  text-decoration: underline;
+}
+
+footer .social-icons {
+  margin: 50px 0;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #f00;
+}
+
+footer .footer-bottom {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 10px 0;
+  font-size: 12px;
+  color: #c9c9c9d2;
+}
+
+footer .footer-bottom p {
+  font-size: 10px;
+  color: #c9c9c9d2;
+}
+
+footer .footer-bottom a {
+  color: #c9c9c9d2;
+  text-decoration: none;
+}
+
+footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  white-space: pre-line;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+}
+
+.main-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #7b7b7b;
+  text-align: center;
+}
+
+
+@keyframes slideUp{
+  to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+.animation{
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.5s forwards;
+  animation-delay: 0.5s;
+  margin-bottom:30px;
+}

@@ -263,7 +263,7 @@ p {
     margin-bottom: 1em;
     color: black;
     text-align: left;
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 
 .part3 .subtitle {
@@ -324,30 +324,39 @@ p {
 
 /* Part 4 Styles */
 .part4 {
-    padding: 2em 0;
+    padding: 30em 0;
     text-align: center;
 }
 
 .part4 .main-title {
     color: black;
     margin-bottom: 0.5em;
+    margin-top: 1em;
+    /* Increased margin to add more space */
 }
 
-.part4 .subtitle {
+.part4 .Asubtitle {
     color: red;
     font-size: 0.85em;
     letter-spacing: 1px;
     font-weight: 550;
-    margin-bottom: 2em;
 }
 
-.part4 .founders {
+.part4 .asubtitle:before {
+    content: '';
+    /* Remove the red dot */
+}
+
+.part4 .founders,
+.part4 .leaders {
     display: flex;
     justify-content: center;
     gap: 2em;
+    flex-wrap: wrap;
 }
 
-.part4 .founder {
+.part4 .founder,
+.part4 .leader {
     text-align: center;
     background-color: #fff;
     padding: 1em;
@@ -356,18 +365,27 @@ p {
     width: 18em;
 }
 
-.part4 .founder img {
-    width: 100%;
-    height: auto;
+.part4 .founder img,
+.part4 .leader img {
+    width: 8em;
+    /* Fixed width */
+    height: 8em;
+    /* Fixed height */
     border-radius: 50%;
+    /* Make image circular */
+    object-fit: cover;
+    /* Ensure image covers the area */
 }
 
-.part4 .founder h3 {
+.part4 .founder h3,
+.part4 .leader h3 {
     font-size: 1.25em;
     margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
-.part4 .founder p {
+.part4 .founder p,
+.part4 .leader p {
     font-size: 1em;
     color: #333;
 }
@@ -381,6 +399,7 @@ p {
     font-weight: bold;
     border: 1px solid red;
     border-radius: 0.25em;
+
 }
 
 .part4 .read-story:hover {
@@ -635,3 +654,19 @@ footer .footer-bottom a:hover {
         background-color: transparent !important;
     }
 }
+
+@keyframes slideUp{
+    to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  }
+  .animation{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.5s forwards;
+    animation-delay: 0.5s;
+    margin-bottom:30px;
+  }
+  

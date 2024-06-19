@@ -33,7 +33,7 @@
             <a class="nav-link" href="Page2.html">Về Asilla</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tuyển Dụng</a>
+            <a class="nav-link" href="Page3.html">Tuyển Dụng</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="HF4.html">Tin Tức</a>
@@ -1049,7 +1049,7 @@
                                           </a>  
                                   </div>  <!-- end box-->
                                 </div><!--end grid-->
-                                  <button id="load-more" class="btn btn-outline-secondary">Xem thêm</button>
+                                <button id="load-more" class="btn btn-outline-secondary">Xem thêm</button>
                         </div><!--end box container-->
                     </div> <!-- end content tab -->
 
@@ -1387,17 +1387,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
-
   <script>
     document.getElementById('load-more').addEventListener('click', function() {
         // Lấy tất cả các box hiện tại
-        let hiddenBoxes = document.querySelectorAll('.box.hidden');
+        let hiddenBoxes = document.querySelectorAll('.hidden');
         // Hiển thị 9 box tiếp theo
-        for (let i = 0; i < 9 && i < hiddenBoxes.length; i++) {
+        for (let i = 0; i < 4 && i < hiddenBoxes.length; i++) {
             hiddenBoxes[i].classList.remove('hidden');
         }
         // Kiểm tra nếu không còn box ẩn, thì ẩn nút "Xem thêm"
-        if (document.querySelectorAll('.box.hidden').length === 0) {
+        if (document.querySelectorAll('.hidden').length === 0) {
             document.getElementById('load-more').style.display = 'none';
         }
     });
