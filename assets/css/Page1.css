@@ -1,5 +1,5 @@
 /* Combined Header Styles */
-body,
+body
 html {
     margin: 0;
     padding: 0;
@@ -739,6 +739,21 @@ footer .footer-bottom a:hover {
 @media (min-width: 993px) {
     .navbar-collapse {
         background-color: transparent !important;
+    }
+
+}
+@media(max-width:700px){
+    .part3{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .circle-container{
+        display: none;
     }
 }
 

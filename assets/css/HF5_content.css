@@ -387,7 +387,13 @@ header, .main-content {
   .box-container{
     width: 70%;
   }
+@media (max-width: 1200px) {
+  .tim-hieu-them{
+    height: 1200px;
+  }
+  
 
+}
   @keyframes slideUp{
     to {
       opacity: 1;
