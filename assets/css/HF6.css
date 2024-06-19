@@ -2,6 +2,12 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
 
 .navbar {
   height: 105px;
@@ -188,6 +194,7 @@ footer .footer-bottom a:hover {
 
 .box-container{
   width: 70%;
+  margin-top: 100px;
 }
 
 .toggle-content {
@@ -225,4 +232,44 @@ footer .footer-bottom a:hover {
 }
 .icon-hidden {
   display: none;
+}
+.submit-btn {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+
+}
+.box-container2 .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left, .right {
+  flex: 1 1 40%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.form-control{
+  width: 100%;
+  border-radius: 10px;
+}
+/* Khi màn hình nhỏ */
+@media (max-width: 768px) {
+  .left, .right {
+      flex: 1 1 800%;
+  }
+}
+@keyframes slideUp{
+  to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+.animation{
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.5s forwards;
+  animation-delay: 0.5s;
+  margin-bottom:30px;
 }
