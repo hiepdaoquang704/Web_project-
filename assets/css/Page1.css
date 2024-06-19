@@ -1,5 +1,5 @@
 /* Combined Header Styles */
-body
+/* body
 html {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ html {
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #333;
     overflow-x: hidden;
-}
+} */
 
 .navbar {
     height: 100px;
@@ -67,6 +67,9 @@ html {
 }
 
 /* Content Styles */
+.container{
+    width: 100vh;
+}
 .container,
 .section {
     display: flex;
@@ -76,11 +79,10 @@ html {
     /* Align with logo */
     padding-right: 30%;
     text-align: left;
+    width: 100%;
 }
 
-.container {
-    height: 100vh;
-}
+
 
 .content {
     max-width: 50em;
