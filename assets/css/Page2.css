@@ -654,7 +654,16 @@ footer .footer-bottom a:hover {
         background-color: transparent !important;
     }
 }
+@media (max-width:993px){
+    .all-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .part1.content{
+        height: auto;
 
+    }
+}
 @keyframes slideUp{
     to {
       opacity: 1;
