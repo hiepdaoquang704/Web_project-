@@ -128,9 +128,9 @@ Bạn có thể thử trải nghiệm sản phẩm tại đây:https://hiepdaoqu
 <!-- ROADMAP -->
 ## Roadmap
 - [ Done ] Header - Footer
-- [ working 99.99% ]] Trang chủ 
+- [ working 99.99% ] Trang chủ 
 - [ working 99.99% ] Về Asilla
-- [ working...] Tuyển Dụng
+- [ working 99.99%] Tuyển Dụng
 - [ working 99.99% ] Tin Tức
 - [ working 99.99% ] Chia Sẻ
 - [ working 99.99% ] Liên Hệ
