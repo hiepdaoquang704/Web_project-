@@ -53,6 +53,7 @@ a{
   color: inherit;
 }
 
+
 /* Content Styles */
 body {
   margin: 0;
@@ -257,6 +258,11 @@ footer .footer-bottom a:hover {
 @media (max-width: 768px) {
   .left, .right {
       flex: 1 1 800%;
+  }
+  .card-header{
+    height: 150px;
+
+    border-bottom: 0px;
   }
 }
 @keyframes slideUp{
