@@ -64,6 +64,7 @@
 ![Imgur](https://i.imgur.com/DgOrDq3.png)  
 
 Asilla được sáng lập bởi các chuyên gia công nghệ thông tin Nhật Bản và Việt Nam vào năm 2015, hiện là một trong số ít các công ty khởi nghiệp trên thế giới đang phát triển công nghệ nhận dạng hành vi bằng AI.
+Asilla là startup tiên phong trong lĩnh vực trí tuệ nhân tạo, tập trung vào công nghệ nhận diện hành vi. Sau hơn 8 năm hình thành và phát triển, Asilla đã có những bước đi chắc chắn, đồng hành cùng hơn 50 khách hàng lớn tại Nhật Bản tạo ra giải pháp công nghệ tương lai và vẫn đang tiếp tục mở rộng kinh doanh sang thị trường Việt Nam và Đông Nam Á.  
 
 Trong dự án này, chúng tôi sẽ thực hiện clone lại website [Asilla](https://technology.asilla.vn/), sử dụng các kiến thức về HTML & CSS trong khoá học CSE703064
 
